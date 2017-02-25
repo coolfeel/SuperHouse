@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取货</title>
+    <!--<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>-->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/validate.js"></script>
+    <script type="text/javascript" src="../js/messages_zh.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top_logo">
+
+        </div>
+        <div class="top_search">
+            <form action="" method="post" role="form">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="search" placeholder="search...">
+                    <span class="input-group-addon glyphicon glyphicon-search" id="location">
+                            <input type="submit" value="查询" class="search">
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="top_sign">
+            <div class="sign_in">
+                <a href="#">登录</a>
+            </div>
+            <div class="sign_out">
+                <a href="#">注销</a>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center_list">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="main.html">主页面</a></li>
+                <li class="list-group-item"><a href="save.html">存货</a><span class="badge">新</span></li>
+                <li class="list-group-item active">取货</li>
+                <li class="list-group-item"><a href="search.html">查询</a><span class="badge">+1</span></li>
+                <li class="list-group-item"><a href="discard.html">报废</a></li>
+                <li class="list-group-item"><a href="manage.html">用户管理</a></li>
+            </ul>
+        </div>
+        <div class="center_saveForm">
+            <div class="saveForm">
+                <form role="form" action="" method="post" class="form-horizontal" id="takeForm">
+                    <br><br>
+                    <div class="form-group">
+                        <lable for="goodsNum" class="col-sm-3 control-label">货物编号</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="_id" id="goodsNum" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="goodsPlace" class="col-sm-3 control-label">货物存放位置</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="position" id="goodsPlace" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="goodsNumber" class="col-sm-3 control-label">货物数量</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="count" id="goodsNumber" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-success">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <a href="#" class="carousel-control left" data-slide="prev" style="height: 1000px;width: 120px;">&lsaquo;</a>
+            <a href="#" class="carousel-control right" data-slide="next" style="height: 1000px;width: 120px;">&rsaquo;</a>
+        </div>
+
+
+    </div>
+    <div class="bottom">
+        <p class="bottom_msg">All rights received  2017 designed by 葱葱小可爱 </p>
+    </div>
+</div>
+</body>
+</html>

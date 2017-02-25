@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <!--<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>-->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/validate.js"></script>
+    <script type="text/javascript" src="../js/messages_zh.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top_logo">
+
+        </div>
+        <div class="top_search">
+            <form action="" method="post" role="form">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="search" placeholder="search...">
+                    <span class="input-group-addon glyphicon glyphicon-search" id="location">
+                            <input type="submit" value="查询" class="search">
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="top_sign">
+            <div class="sign_in">
+                <a href="#">登录</a>
+            </div>
+            <div class="sign_out">
+                <a href="#">注销</a>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center_list">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="main.html">主页面</a></li>
+                <li class="list-group-item"><a href="save.html">存货</a><span class="badge">新</span></li>
+                <li class="list-group-item"><a href="take.html">取货</a></li>
+                <li class="list-group-item"><a href="search.html">查询</a><span class="badge">+1</span></li>
+                <li class="list-group-item"><a href="discard.html">报废</a></li>
+                <li class="list-group-item active">用户管理</li>
+            </ul>
+        </div>
+        <div class="center_saveForm">
+            <div class="saveForm">
+                <form role="form" action="" method="post" class="form-horizontal" style="height: 400px;" id="manageForm">
+                    <br><br>
+                    <div class="form-group">
+                        <lable for="userNum" class="col-sm-3 control-label">员工号</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="_id" id="userNum" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="userName" class="col-sm-3 control-label">员工姓名</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="staffname" id="userName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="userPsd" class="col-sm-3 control-label">密码</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="password" id="userPsd" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <lable for="userBirth" class="col-sm-3 control-label">员工生日</lable>
+                        <div class="col-sm-9">
+                            <input type="text" name="birthday" id="userBirth" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">是否为管理</label>
+                        <div class="col-sm-9">
+                            <div class="radio" style="width: 50px;float: left;">
+                                <label><input type="radio" name="singleRadio" style="width: 50px;margin-left: -35px;">是</label>
+                            </div>
+                            <div class="radio" style="width: 50px;float: left;">
+                                <label><input type="radio" name="singleRadio" style="width: 50px;margin-left: -35px;">否</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-success">添加</button>
+                        </div>
+                    </div>
+                </form>
+
+                <form role="form" action="" method="post" class="form-horizontal">
+                    <table class="table" style="width: 865px;border-top: 1px solid gray;">
+                        <caption>员工信息如下:</caption>
+                        <thead>
+                        <tr>
+                            <th>员工号</th>
+                            <th>员工姓名</th>
+                            <th>员工年龄</th>
+                            <th>入职时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td><input type="checkbox">&nbsp;&nbsp;<span>001</span></td>
+                            <td>孙晓聪</td>
+                            <td>1</td>
+                            <td>2000-1-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox">&nbsp;&nbsp;<span>001</span></td>
+                            <td>孙晓聪</td>
+                            <td>1</td>
+                            <td>2000-1-1</td>
+                        </tr>
+                        <tr class="success">
+                            <td><input type="checkbox">&nbsp;&nbsp;<span>001</span></td>
+                            <td>孙晓聪</td>
+                            <td>1</td>
+                            <td>2000-1-1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-success">停职</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="carousel-control left" data-slide="prev" style="height: 1000px;width: 120px;">&lsaquo;</a>
+            <a href="#" class="carousel-control right" data-slide="next" style="height: 1000px;width: 120px;">&rsaquo;</a>
+        </div>
+    </div>
+    <div class="bottom">
+        <p class="bottom_msg">All rights received  2017 designed by 葱葱小可爱 </p>
+    </div>
+</div>
+</body>
+</html>
